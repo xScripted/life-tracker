@@ -1,0 +1,29 @@
+{
+  "name": "bedrock",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "node scripts/readUrls && astro sync && astro dev",
+    "build": "node scripts/hidePrivate && astro build --remote && node scripts/addPrivate",
+    "preview": "astro preview",
+    "update": "ncu -u && npm install"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.5.9",
+    "@astrojs/db": "^0.9.4",
+    "@astrojs/sitemap": "^3.1.1",
+    "@astrojs/svelte": "^5.2.0",
+    "@lucia-auth/adapter-drizzle": "^1.0.7",
+    "astro": "^4.5.6",
+    "astro-robots": "^2.0.1",
+    "leaflet": "^1.9.4",
+    "lucia": "^3.1.1",
+    "oslo": "^1.2.0",
+    "svelte": "^4.2.12"
+  },
+  "devDependencies": {
+    "prettier-plugin-svelte": "^3.2.2",
+    "sass": "1.72.0",
+    "typescript": "^5.4.2"
+  }
+}
